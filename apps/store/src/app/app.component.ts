@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { getAllGames } from '../fake-api';
+// import { getAllGames } from '../fake-api';
 import { formatRating } from '@bg-hoard/store/util-formatters';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -9,7 +10,9 @@ import { formatRating } from '@bg-hoard/store/util-formatters';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor(private http: HttpClient) {}
+
   title = 'Board Game Hoard';
-  games = getAllGames();
   formatRating = formatRating;
+  games = this.http.get<any[]>('/api/games');
 }
