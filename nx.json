@@ -40,7 +40,7 @@
       "tags": ["scope:store", "type:app"]
     },
     "store-e2e": {
-      "tags": ["scope:store","type:e2e"],
+      "tags": ["scope:store", "type:e2e"],
       "implicitDependencies": ["store"]
     },
     "store-feature-game-detail": {
@@ -57,7 +57,7 @@
       "tags": ["scope:store", "type:util"]
     },
     "util-interface": {
-      "tags": ["scope:shared","type:util"]
+      "tags": ["scope:shared", "type:util"]
     }
   }
 }
