@@ -20,19 +20,19 @@
         "items": [
           {
             "value": "store",
-            "label": "store"
+            "label": "store scope"
           },
           {
             "value": "api",
-            "label": "api"
+            "label": "api scope"
           },
           {
             "value": "shared",
-            "label": "shared"
+            "label": "shared scope"
           }
         ]
       }
     }
   },
-  "required": ["name"]
+  "required": ["name", "directory"]
 }
